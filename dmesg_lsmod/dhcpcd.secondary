@@ -1,0 +1,14 @@
+doas (gupta@adityag4091) password: 
+dhcpcd-9.4.1 starting
+dev: loaded udev
+DUID 00:04:2c:d2:ef:15:79:9a:3e:46:a6:ad:25:1a:20:10:14:dd
+wlp1s0: connected to Access Point: moto one power
+wlp1s0: IAID 5d:ef:6f:e6
+wlp1s0: rebinding lease of 192.168.43.180
+wlp1s0: probing address 192.168.43.180/24
+wlp1s0: soliciting an IPv6 router
+wlp1s0: Router Advertisement from fe80::8409:bdff:fe68:ed45
+wlp1s0: adding address 2401:4900:45bc:8d14:7351:d8c6:29d3:77a7/64
+wlp1s0: adding route to 2401:4900:45bc:8d14::/64
+wlp1s0: adding default route via fe80::8409:bdff:fe68:ed45
+forked to background, child pid 1463

@@ -1,0 +1,117 @@
+Module                  Size  Used by
+snd_seq_dummy          16384  0
+snd_hrtimer            16384  1
+snd_seq                98304  7 snd_seq_dummy
+snd_seq_device         16384  1 snd_seq
+rfcomm                 94208  16
+ccm                    20480  6
+cmac                   16384  2
+algif_hash             20480  1
+algif_skcipher         16384  1
+af_alg                 36864  6 algif_hash,algif_skcipher
+bnep                   32768  2
+uvcvideo              151552  0
+videobuf2_vmalloc      20480  1 uvcvideo
+videobuf2_memops       20480  1 videobuf2_vmalloc
+videobuf2_v4l2         40960  1 uvcvideo
+btusb                  69632  0
+btrtl                  28672  1 btusb
+videobuf2_common       94208  4 videobuf2_vmalloc,videobuf2_v4l2,uvcvideo,videobuf2_memops
+btbcm                  20480  1 btusb
+btintel                49152  1 btusb
+videodev              319488  3 videobuf2_v4l2,uvcvideo,videobuf2_common
+rtsx_usb_ms            24576  0
+rtsx_usb_sdmmc         36864  0
+bluetooth             778240  45 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+memstick               24576  1 rtsx_usb_ms
+mmc_core              237568  1 rtsx_usb_sdmmc
+mc                     77824  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+rtsx_usb               36864  2 rtsx_usb_sdmmc,rtsx_usb_ms
+ecdh_generic           16384  1 bluetooth
+nfnetlink              20480  0
+amdgpu               9269248  18
+snd_hda_codec_realtek   180224  1
+snd_hda_codec_generic   110592  1 snd_hda_codec_realtek
+ledtrig_audio          16384  1 snd_hda_codec_generic
+snd_hda_codec_hdmi     90112  1
+snd_hda_intel          61440  2
+snd_intel_dspcfg       32768  1 snd_hda_intel
+snd_intel_sdw_acpi     20480  1 snd_intel_dspcfg
+snd_hda_codec         192512  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+snd_hda_core          122880  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+gpu_sched              53248  1 amdgpu
+snd_hwdep              20480  1 snd_hda_codec
+snd_pcm               180224  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+drm_ttm_helper         16384  1 amdgpu
+snd_pci_acp5x          20480  0
+snd_timer              49152  3 snd_seq,snd_hrtimer,snd_pcm
+snd_rn_pci_acp3x       24576  0
+snd                   135168  16 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
+ttm                    90112  2 amdgpu,drm_ttm_helper
+snd_pci_acp3x          20480  0
+soundcore              16384  1 snd
+i2c_amd_mp2_pci        28672  0
+intel_rapl_msr         20480  0
+intel_rapl_common      36864  1 intel_rapl_msr
+edac_mce_amd           53248  0
+iwlmvm                536576  0
+kvm_amd               163840  0
+joydev                 28672  0
+mousedev               24576  0
+vfat                   24576  1
+ccp                   139264  1 kvm_amd
+fat                    90112  1 vfat
+mac80211             1306624  1 iwlmvm
+asus_nb_wmi            28672  0
+kvm                  1179648  1 kvm_amd
+libarc4                16384  1 mac80211
+asus_wmi               65536  1 asus_nb_wmi
+sparse_keymap          16384  1 asus_wmi
+irqbypass              16384  1 kvm
+hid_multitouch         32768  0
+platform_profile       16384  1 asus_wmi
+wmi_bmof               16384  0
+crct10dif_pclmul       16384  1
+iwlwifi               471040  1 iwlmvm
+crc32_pclmul           16384  0
+ghash_clmulni_intel    16384  0
+aesni_intel           380928  7
+crypto_simd            16384  1 aesni_intel
+cryptd                 28672  3 crypto_simd,ghash_clmulni_intel
+rapl                   16384  0
+cfg80211             1097728  3 iwlmvm,iwlwifi,mac80211
+pcspkr                 16384  0
+sp5100_tco             20480  0
+rfkill                 32768  10 asus_wmi,bluetooth,cfg80211
+k10temp                16384  0
+i2c_piix4              36864  0
+wmi                    40960  2 asus_wmi,wmi_bmof
+tpm_crb                24576  0
+tpm_tis                16384  0
+tpm_tis_core           32768  1 tpm_tis
+tpm                   102400  3 tpm_tis,tpm_crb,tpm_tis_core
+video                  57344  1 asus_wmi
+i2c_hid_acpi           16384  0
+mac_hid                16384  0
+i2c_hid                45056  1 i2c_hid_acpi
+rng_core               20480  2 ccp,tpm
+pinctrl_amd            32768  1
+acpi_cpufreq           32768  0
+crypto_user            20480  0
+fuse                  184320  1
+bpf_preload            16384  0
+ip_tables              32768  0
+x_tables               61440  1 ip_tables
+ext4                 1036288  2
+crc32c_generic         16384  0
+crc16                  16384  2 bluetooth,ext4
+mbcache                16384  1 ext4
+jbd2                  196608  1 ext4
+serio_raw              20480  0
+atkbd                  36864  0
+libps2                 24576  1 atkbd
+crc32c_intel           24576  4
+i8042                  45056  1 asus_nb_wmi
+xhci_pci               24576  0
+xhci_pci_renesas       24576  1 xhci_pci
+serio                  28672  4 serio_raw,atkbd,i8042
