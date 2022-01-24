@@ -1,0 +1,106 @@
+Module                  Size  Used by
+ccm                    20480  6
+snd_seq_dummy          16384  0
+snd_hrtimer            16384  1
+snd_seq                86016  7 snd_seq_dummy
+snd_seq_device         16384  1 snd_seq
+rfcomm                 90112  19
+cmac                   16384  3
+algif_hash             16384  1
+algif_skcipher         16384  1
+af_alg                 32768  6 algif_hash,algif_skcipher
+nfnetlink              20480  0
+bnep                   28672  2
+btusb                  57344  0
+btrtl                  28672  1 btusb
+btbcm                  20480  1 btusb
+btintel                45056  1 btusb
+bluetooth             843776  47 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+ecdh_generic           16384  2 bluetooth
+vfat                   20480  1
+fat                    86016  1 vfat
+intel_rapl_msr         20480  0
+intel_rapl_common      32768  1 intel_rapl_msr
+iosf_mbi               24576  1 intel_rapl_common
+mousedev               24576  0
+edac_mce_amd           61440  0
+serio_raw              20480  0
+asus_nb_wmi            28672  0
+iwlmvm                507904  0
+atkbd                  36864  0
+snd_hda_codec_realtek   163840  1
+kvm_amd               163840  0
+asus_wmi               65536  1 asus_nb_wmi
+kvm                  1060864  1 kvm_amd
+rtsx_usb_ms            24576  0
+memstick               24576  1 rtsx_usb_ms
+sparse_keymap          16384  1 asus_wmi
+snd_hda_codec_generic    98304  1 snd_hda_codec_realtek
+hid_multitouch         32768  0
+platform_profile       16384  1 asus_wmi
+libps2                 20480  1 atkbd
+wmi_bmof               16384  0
+mac80211             1155072  1 iwlmvm
+snd_hda_codec_hdmi     77824  1
+ledtrig_audio          16384  1 snd_hda_codec_generic
+irqbypass              16384  1 kvm
+libarc4                16384  1 mac80211
+snd_hda_intel          53248  2
+crct10dif_pclmul       16384  1
+amdgpu               8454144  22
+snd_intel_dspcfg       20480  1 snd_hda_intel
+crc32_pclmul           16384  0
+ghash_clmulni_intel    16384  0
+snd_hda_codec         172032  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+aesni_intel           380928  8
+iwlwifi               462848  1 iwlmvm
+snd_hwdep              16384  1 snd_hda_codec
+rtsx_usb               32768  1 rtsx_usb_ms
+crypto_simd            16384  1 aesni_intel
+snd_hda_core          114688  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd_pci_acp6x          16384  0
+cryptd                 28672  3 crypto_simd,ghash_clmulni_intel
+rapl                   20480  0
+pcspkr                 16384  0
+k10temp                16384  0
+snd_pcm               139264  5 snd_hda_codec_hdmi,snd_pci_acp6x,snd_hda_intel,snd_hda_codec,snd_hda_core
+cfg80211              974848  3 iwlmvm,iwlwifi,mac80211
+snd_timer              45056  3 snd_seq,snd_hrtimer,snd_pcm
+gpu_sched              53248  1 amdgpu
+snd_pci_acp5x          20480  0
+drm_ttm_helper         16384  1 amdgpu
+snd                   118784  16 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
+i2c_amd_mp2_pci        28672  0
+snd_pci_acp3x          20480  0
+ccp                   126976  1 kvm_amd
+ttm                    86016  2 amdgpu,drm_ttm_helper
+soundcore              16384  1 snd
+rfkill                 32768  12 iwlmvm,asus_wmi,bluetooth,cfg80211
+i2c_piix4              32768  0
+i8042                  45056  1 asus_nb_wmi
+wmi                    40960  2 asus_wmi,wmi_bmof
+tpm_crb                20480  0
+tpm_tis                16384  0
+serio                  28672  4 serio_raw,atkbd,i8042
+i2c_hid_acpi           16384  0
+tpm_tis_core           28672  1 tpm_tis
+video                  57344  1 asus_wmi
+tpm                    98304  3 tpm_tis,tpm_crb,tpm_tis_core
+i2c_hid                40960  1 i2c_hid_acpi
+pinctrl_amd            32768  1
+rng_core               16384  2 ccp,tpm
+acpi_cpufreq           32768  0
+sg                     45056  0
+crypto_user            20480  0
+fuse                  167936  1
+ip_tables              24576  0
+x_tables               45056  1 ip_tables
+ext4                  974848  2
+crc32c_generic         16384  0
+mbcache                16384  1 ext4
+crc16                  16384  2 bluetooth,ext4
+jbd2                  188416  1 ext4
+xhci_pci               20480  0
+xhci_pci_renesas       24576  1 xhci_pci
+crc32c_intel           24576  4
+xhci_hcd              335872  1 xhci_pci
