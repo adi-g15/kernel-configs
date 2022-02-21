@@ -1,0 +1,14 @@
+* 17.0-rc4 was last kernel with Network file systems enabled, kbhi chahiye ho to zen kernel ke according waha ke options chose krlena
+* First time LZ4 compressed kernel was less size than linux-zen's kernel
+
+> du -s /boot/vmlinuz*
+
+10540	/boot/vmlinuz (rc5)
+11072	/boot/vmlinuz-linux-zen
+12788	/boot/vmlinuz.old (rc4)
+
+* Old notes for this version rc5
+
+# Install headers too
+# CONFIG_SYMBOLIC_ERRNAME=y
+# CONFIG_DEBUG_FS = n
