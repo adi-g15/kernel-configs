@@ -1,0 +1,60 @@
+> .config is same as ./config.5.17-rc5
+
+❯ make kvm_guest.config
+Using .config as base
+Merging ./kernel/configs/kvm_guest.config
+Value of CONFIG_NETWORK_FILESYSTEMS is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_NETWORK_FILESYSTEMS is not set
+New value: CONFIG_NETWORK_FILESYSTEMS=y
+
+Value of CONFIG_IP_PNP is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_IP_PNP is not set
+New value: CONFIG_IP_PNP=y
+
+Value of CONFIG_DEBUG_KERNEL is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_DEBUG_KERNEL is not set
+New value: CONFIG_DEBUG_KERNEL=y
+
+Value of CONFIG_PARAVIRT is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_PARAVIRT is not set
+New value: CONFIG_PARAVIRT=y
+
+Value of CONFIG_VIRTIO_PCI is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: CONFIG_VIRTIO_PCI=m
+New value: CONFIG_VIRTIO_PCI=y
+
+Value of CONFIG_VIRTIO_BLK is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: CONFIG_VIRTIO_BLK=m
+New value: CONFIG_VIRTIO_BLK=y
+
+Value of CONFIG_VIRTIO_CONSOLE is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: CONFIG_VIRTIO_CONSOLE=m
+New value: CONFIG_VIRTIO_CONSOLE=y
+
+Value of CONFIG_VIRTIO_NET is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: CONFIG_VIRTIO_NET=m
+New value: CONFIG_VIRTIO_NET=y
+
+Value of CONFIG_NET_9P is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_NET_9P is not set
+New value: CONFIG_NET_9P=y
+
+Value of CONFIG_SCSI_VIRTIO is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: # CONFIG_SCSI_VIRTIO is not set
+New value: CONFIG_SCSI_VIRTIO=y
+
+Value of CONFIG_VIRTIO_INPUT is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: CONFIG_VIRTIO_INPUT=m
+New value: CONFIG_VIRTIO_INPUT=y
+
+Value of CONFIG_DRM_VIRTIO_GPU is redefined by fragment ./kernel/configs/kvm_guest.config:
+Previous value: CONFIG_DRM_VIRTIO_GPU=m
+New value: CONFIG_DRM_VIRTIO_GPU=y
+
+#
+# merged configuration written to .config (needs make)
+#
+#
+# configuration written to .config
+#
+
